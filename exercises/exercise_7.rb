@@ -23,5 +23,10 @@ puts 'Create a new store!'
   store.name = @new_store
 end
 @new_store.save
-puts "Sorry, name  #{@new_store.errors[:name][0]}"
+if @new_store.errors[:name] != []
+ puts "Sorry, name  #{@new_store.errors[:name][0]}"
+end
+
 puts "Sorry, annual_revenue  #{@new_store.errors[:annual_revenue][0]}"
+
+puts @new_store.errors[:mens_apparel][0]
