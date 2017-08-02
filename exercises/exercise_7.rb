@@ -16,17 +16,17 @@ puts "----------"
 #
 
 # Your code goes here ...
-puts 'Create a new store!'
-@new_store = gets.strip
+# puts 'Create a new store!'
+# @new_store = gets.strip
 
-@new_store = Store.new do |store|
-  store.name = @new_store
-end
-@new_store.save
-if @new_store.errors[:name] != []
- puts "Sorry, name  #{@new_store.errors[:name][0]}"
-end
+# @new_store = Store.new do |store|
+#   store.name = @new_store
+# end
+# @new_store.save
+# if @new_store.errors[:name] != []
+#  puts "Sorry, name  #{@new_store.errors[:name][0]}"
+# end
 
-puts "Sorry, annual_revenue  #{@new_store.errors[:annual_revenue][0]}"
+# puts "Sorry, annual_revenue  #{@new_store.errors[:annual_revenue][0]}"
 
-puts @new_store.errors[:mens_apparel][0]
+# puts @new_store.errors[:mens_apparel][0]
